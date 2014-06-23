@@ -126,14 +126,11 @@ namespace Projet_2._0
             base.Update(gameTime);
         }
 
-
-        //posTest = "" + screenmanager.casper.Position.X + " " + screenmanager.casper.Position.Y;
         public string posClient()
         {
-            gameState = GameType.Menu_Play_Solo_world1_lvl1;
-            if (gameState == GameType.Menu_Play_Solo_world1_lvl1)
+            if (screenmanager.gametype == GameType.Menu_Play_Solo_world1_lvl1)
             {
-                test = "1";// +screenmanager.casper.Position.X + "8" + screenmanager.casper.Position.Y;
+                test = "" + screenmanager.casper.Position.X + " " + screenmanager.casper.Position.Y;
             }
             else
             {

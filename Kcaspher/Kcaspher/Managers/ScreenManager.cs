@@ -45,7 +45,7 @@ namespace Projet_2._0
         AI_basic BigMonster;
         Menu_Base menubase;
         Menu_Options menuoptions;
-        GameType gametype, previousgametype;
+        public GameType gametype, previousgametype;
         Menu_Play menuplay;
         Menu_Play_Solo menuSolo;
         Menu_Play_Multi menuMulti;

@@ -84,7 +84,7 @@ namespace Client
         {            
             while (true)
             {
-                s = "65845"; // + game.posClient(); // envoie de pos
+                s = "65845" + game.posClient(); // envoie de pos
                 servWriter.WriteLine(s);
                 servWriter.Flush();
             }

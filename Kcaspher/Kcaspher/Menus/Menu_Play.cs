@@ -36,7 +36,11 @@ namespace Projet_2._0
 
             if (mouseClick.Intersects(client))
             {
-                System.Diagnostics.Process.Start("C:/Users/epita/Desktop/Kspher/Client/bin/Debug/Client.exe");
+                //System.Diagnostics.Process.Start("C:/Users/epita/Desktop/Kspher/Client/bin/Debug/Client.exe");
+                Client.Client c = new Client.Client();
+                Thread t = new Thread(new ThreadStart(Client.Program2.Mainq));
+                t.Start();
+                t.IsBackground = true;
             }
             if (mouseClick.Intersects(lolmulti))
             {
